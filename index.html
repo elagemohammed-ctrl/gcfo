@@ -1,0 +1,170 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bearded Man</title>
+
+<style>
+    body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #222;
+    }
+
+    .man {
+        position: relative;
+        width: 220px;
+        height: 300px;
+    }
+
+    /* Head */
+    .head {
+        position: absolute;
+        width: 170px;
+        height: 190px;
+        background: #c6865b;
+        border-radius: 48% 48% 45% 45%;
+        left: 25px;
+        top: 20px;
+    }
+
+    /* Hair */
+    .hair {
+        position: absolute;
+        width: 175px;
+        height: 70px;
+        background: #17120f;
+        border-radius: 50% 50% 20% 20%;
+        left: 22px;
+        top: 10px;
+    }
+
+    /* Eyes */
+    .eye {
+        position: absolute;
+        width: 18px;
+        height: 10px;
+        background: white;
+        border-radius: 50%;
+        top: 85px;
+    }
+
+    .eye::after {
+        content: "";
+        position: absolute;
+        width: 7px;
+        height: 7px;
+        background: #111;
+        border-radius: 50%;
+        left: 6px;
+        top: 2px;
+    }
+
+    .left-eye {
+        left: 55px;
+    }
+
+    .right-eye {
+        right: 55px;
+    }
+
+    /* Nose */
+    .nose {
+        position: absolute;
+        width: 18px;
+        height: 35px;
+        border-right: 3px solid #965d3d;
+        border-bottom: 3px solid #965d3d;
+        border-radius: 0 0 12px 0;
+        left: 77px;
+        top: 98px;
+    }
+
+    /* Beard */
+    .beard {
+        position: absolute;
+        width: 125px;
+        height: 95px;
+        background: #211713;
+        border-radius: 20px 20px 50% 50%;
+        left: 48px;
+        top: 115px;
+    }
+
+    /* Mustache */
+    .mustache {
+        position: absolute;
+        width: 55px;
+        height: 22px;
+        background: #211713;
+        border-radius: 50%;
+        left: 58px;
+        top: 125px;
+        z-index: 2;
+    }
+
+    /* Mouth */
+    .mouth {
+        position: absolute;
+        width: 35px;
+        height: 5px;
+        background: #7a382e;
+        border-radius: 50%;
+        left: 68px;
+        top: 145px;
+        z-index: 3;
+    }
+
+    /* Neck */
+    .neck {
+        position: absolute;
+        width: 65px;
+        height: 65px;
+        background: #b87550;
+        left: 78px;
+        top: 190px;
+        z-index: -1;
+    }
+
+    /* Shirt */
+    .shirt {
+        position: absolute;
+        width: 210px;
+        height: 100px;
+        background: #111;
+        left: 5px;
+        top: 230px;
+        border-radius: 30px 30px 0 0;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="man">
+
+    <div class="head"></div>
+    <div class="hair"></div>
+
+    <div class="eye left-eye"></div>
+    <div class="eye right-eye"></div>
+
+    <div class="nose"></div>
+
+    <div class="beard"></div>
+    <div class="mustache"></div>
+    <div class="mouth"></div>
+
+    <div class="neck"></div>
+    <div class="shirt"></div>
+
+</div>
+
+</body>
+</html>
+```
